@@ -1,0 +1,11 @@
+CREATE TABLE Products ProductID ProductName Price Stock
+INSERT INTO Products VALUES (1, Widget, 19.99, 100)
+INSERT INTO Products VALUES (2, Gadget, 29.99, 50)
+INSERT INTO Products VALUES (3, Thingamajig, 9.99, 200)
+
+SELECT * FROM Products
+
+SET Products SET Price=24.99 WHERE ProductName=Gadget
+SET Products SET Stock=75 WHERE ProductID=1
+
+SELECT * FROM Products
